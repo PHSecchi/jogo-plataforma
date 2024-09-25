@@ -1,0 +1,18 @@
+#pragma once
+#include "stdafx.h"
+#include "Player.h"
+
+class Warrior :
+    public Player
+{
+private:
+    float limit;
+    float cooldown;
+    bool canAttackBool;
+public:
+    Warrior(IdsColidiveis ID = IdsColidiveis::blank, sf::Vector2f sz = sf::Vector2f(60.f, 90.f), sf::Vector2f pos = sf::Vector2f(0.f, 0.f), sf::Vector2f vel = sf::Vector2f(0.f, 0.f), string texturePath = "", float* t = nullptr, sf::RenderWindow* window = nullptr);
+    ~Warrior();
+
+    void canAttack(float t);
+    void update();
+};

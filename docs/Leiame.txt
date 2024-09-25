@@ -1,0 +1,5 @@
+Jogo Green Threat
+
+Sistema operacional: Windows 10 64x-86x
+Compilador: Visual Studio 2019 versão 4.8.04084
+Biblioteca gráfica: SFML versão 2.5.1
